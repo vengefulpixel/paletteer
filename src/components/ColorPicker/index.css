@@ -1,0 +1,83 @@
+.paletteer-colour-picker {
+  position: relative;
+  background-color: #ddd;
+  box-shadow: inset 0px 0px 6px rgba(0, 0, 0, 0.5);
+  height: 0px;
+  width: 100%;
+  transition-property: height, margin;
+  transition-duration: 200ms;
+  transition-timing-function: ease-in-out;
+  border-radius: 3px;
+  overflow: hidden;
+  box-sizing: border-box;
+  margin-top: 0px;
+}
+
+.paletteer-colour-picker.expanded {
+  margin-top: 4px;
+  height: 300px;
+}
+
+.paletteer-colour-picker .content {
+  margin: 10px;
+  display: flex;
+}
+
+.paletteer-colour-input--sat-val {
+  position: relative;
+  height: 282px;
+  border-radius: 2px;
+  cursor: move;
+  flex-grow: 1;
+}
+
+.paletteer-colour-input--sat-val::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-image: linear-gradient(to bottom, transparent, black),
+    linear-gradient(to right, white, transparent);
+}
+
+.paletteer-colour-input--hue {
+  position: relative;
+  width: 10px;
+  height: 282px;
+  border-radius: 4px;
+  margin-left: 8px;
+  background-image: linear-gradient(
+    to bottom,
+    #f00,
+    #ff0,
+    #0f0,
+    #0ff,
+    #00f,
+    #f0f,
+    #f00
+  );
+  cursor: ns-resize;
+}
+
+.paletteer-colour-input--selection {
+  position: absolute;
+  pointer-events: none;
+  z-index: 1;
+  overflow: visible;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+}
+
+.paletteer-colour-input--inputs {
+  padding: 10px;
+}
+
+.paletteer-colour-input--inputs fieldset {
+  background-color: rgba(0, 0, 0, 0.05);
+  border: none;
+  border-radius: 3px;
+  box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+}

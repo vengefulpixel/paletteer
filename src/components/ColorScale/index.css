@@ -1,0 +1,62 @@
+.paletteer-scale {
+  display: block;
+  margin: 12px;
+}
+
+.paletteer-scale--cards {
+  display: inline-flex;
+  overflow: hidden;
+  margin: 4px 0;
+  border-bottom: 1px solid #ddd;
+}
+
+.paletteer-scale--title {
+  display: flex;
+  align-items: stretch;
+}
+
+.paletteer-scale--title > input {
+  border: 1px solid #999;
+  height: 32px;
+  line-height: 24px;
+  margin: 0;
+}
+
+.paletteer-scale--title > label {
+  line-height: 32px;
+  margin: 0 0.3em;
+}
+
+.paletteer-scale--title > input.title {
+  border: 1px solid transparent;
+  flex-grow: 1;
+  font-size: 24px;
+}
+
+.paletteer-scale--title > input.hex {
+  width: 100px;
+}
+
+.paletteer-scale--title > input:focus {
+  border: 1px solid #222;
+}
+
+.paletteer-scale--baseColor {
+  width: 64px;
+  border: 1px solid #999;
+  border-radius: 3px;
+  margin-left: 0.3em;
+}
+
+.paletteer-scale--delete {
+  width: 32px;
+  border: 1px solid #999;
+  border-radius: 3px;
+  margin-left: 0.3em;
+  background-color: white;
+  padding: 2px;
+}
+.paletteer-scale--delete svg {
+  display: block;
+  margin: 0;
+}

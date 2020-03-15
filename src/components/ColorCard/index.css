@@ -1,0 +1,23 @@
+.paletteer-color-card {
+  display: flex;
+  flex-direction: column;
+  width: 50px;
+}
+
+.paletteer-color-card--swatch {
+  height: 30px;
+}
+
+.paletteer-color-card:first-child .paletteer-color-card--swatch {
+  border-radius: 3px 0 0 3px;
+}
+
+.paletteer-color-card:last-child .paletteer-color-card--swatch {
+  border-radius: 0 3px 3px 0;
+}
+
+.paletteer-color-card--index {
+  font-size: 12px;
+  padding: 4px 0;
+  color: #555;
+}
